@@ -6,7 +6,7 @@ class Soldier {
     this.width = 50;
     this.height = 50;
     this.health = 100;
-    this.speed= 20;
+    this.speed= 25;
   }
   moveLeft() {
     this.x-= this.speed;
