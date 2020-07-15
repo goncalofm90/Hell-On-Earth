@@ -10,9 +10,9 @@ class Health {
 
     context.save();
 
-    context.font = '32px sans-serif';
-
-    context.fillText('Health: ' + Health, 10, 650);
+    context.font = '32px Roboto Mono';
+    context.fillStyle = 'white';
+    context.fillText('Health: ' + Health, 20, 650);
 
     context.restore();
   }

@@ -1,25 +1,40 @@
-class Obstacle {
+class Enemy {
   constructor (x, y, game) {
     this.game = game;
     this.x = x;
     this.y = y;
-    this.width = 40;
-    this.height = this.game.canvas.height;
-    this.health = 3;
+    this.width = 50;
+    this.height = 50;
+    this.health = 1;
     this.speed = 20;
   }
+
+  // removeEnemies(){
+  //   if(this.health === 0){
+  //     const index = this.game.enemies.splice(index,1)
+  //   }
+  // }
+  
     runLogic(){
+      this.x --;
 
+  
     }
-
-
-    // enemy collision with obstacle -= 10 score;
     
     paint () {
       const context = this.game.context;
       context.save();
-      context.fillStyle = '#575757';
+      context.fillStyle ='darkGreen';
       context.fillRect(this.x, this.y, this.width, this.height);
       context.restore();
       }
+    
+      
     }
+
+  
+    
+
+
+
+

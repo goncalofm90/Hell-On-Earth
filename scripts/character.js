@@ -2,38 +2,56 @@ class Soldier {
   constructor(x, y, game){
     this.game= game;
     this.x = x;
-    this.y = y;
+    this.y = y; 
     this.width = 50;
     this.height = 50;
     this.health = 100;
-    this.speed= 25;
+    this.speed= 30;
+    this.direction = 'right';
   }
   moveLeft() {
-    this.x-= this.speed;
-    this.direction = 'left';
+    if(this.x > 0){
+      this.x -= this.speed;
+      return;
+      this.direction = 'left';
+    }
   }
 
   moveRight() {
+    if (this.x + this.width > 250) {
+      return;
+    }else{
     this.x+= this.speed;
     this.direction = 'right';
+    }
   }
 
   moveUp() {
-    this.y-= this.speed;
-    this.direction = 'up';
+    if(this.y > 0){
+      this.y -= this.speed;
+    }else {
+      return;
+      this.direction = 'up';
+    }
+    
   }
 
   moveDown() {
+    if (this.y + this.height > this.game.canvas.height) {
+      return;
+    }else{
     this.y+= this.speed;
     this.direction = 'down';
+    }
   }
+  
   runLogic(){
-
+    
 }
   paint () {
     const context = this.game.context;
     context.save();
-    context.fillStyle = 'red';
+    context.fillStyle = 'midnightblue';
     context.fillRect(this.x, this.y, this.width, this.height);
     context.restore();
     }

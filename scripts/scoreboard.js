@@ -1,18 +1,19 @@
 class Scoreboard {
   constructor (game) {
     this.game = game;
+    this.score = 0;
     
   }
 
   paint () {
     const context = this.game.context;
-    const score = 0;
+  
 
     context.save();
 
-    context.font = '32px sans-serif';
-
-    context.fillText('Score: ' + score, 850, 650);
+    context.font = '32px Roboto Mono';
+    context.fillStyle = 'white';
+    context.fillText('Score: ' + this.score, 800, 650);
 
     context.restore();
   }

@@ -1,25 +1,29 @@
-class Obstacle {
+class Projectile {
   constructor (x, y, game) {
     this.game = game;
     this.x = x;
     this.y = y;
-    this.width = 40;
-    this.height = this.game.canvas.height;
-    this.health = 3;
-    this.speed = 20;
+    this.width = 5;
+    this.height = 5;
+    this.speed = 15;
   }
+  
     runLogic(){
-
+      this.x += this.speed;
+       
+      //generateArray
     }
-
-
-    // enemy collision with obstacle -= 10 score;
-    
+    shoot(){
+      this.game.generateBullets(); 
+    }
+  
     paint () {
       const context = this.game.context;
       context.save();
-      context.fillStyle = '#575757';
+      context.fillStyle ='white';
       context.fillRect(this.x, this.y, this.width, this.height);
       context.restore();
       }
+
     }
+    

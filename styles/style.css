@@ -8,9 +8,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #49523c;
+  background-image: url("https://www.wenell.se/wp-content/uploads/2019/09/zombie1024x400-1024x400.jpg");
+  box-sizing: border-box;
+  background-size: cover;
+  font-family: 'Do Hyeon', sans-serif;
 }
 
 canvas {
-  background-color: #59433f;
+  background-color: #2e2b2b;
 }
