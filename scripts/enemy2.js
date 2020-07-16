@@ -3,8 +3,8 @@ class Enemy2 {
     this.game = game;
     this.x = x;
     this.y = y;
-    this.width = 100;
-    this.height = 40;
+    this.width = 200;
+    this.height = 100;
     this.health = 1;
     this.speed = 20;
   }
@@ -12,7 +12,7 @@ class Enemy2 {
  
   
     runLogic(){
-      this.x -= 5;
+      this.x -= 13;
 
   
     }
@@ -25,10 +25,16 @@ class Enemy2 {
     paint () {
       const context = this.game.context;
       context.save();
-      context.fillStyle ='red';
-      context.fillRect(this.x, this.y, this.width, this.height);
+      // context.fillStyle ='red';
+      // context.fillRect(this.x, this.y, this.width, this.height);
+      const licker = new Image();
+      licker.src = 'images/zombie/licker.png';
+      context.drawImage(licker, this.x,this.y,this.width,this.height) 
       context.restore();
       }
     
+   
+    
+      
       
     }

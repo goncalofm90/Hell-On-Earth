@@ -3,8 +3,8 @@ class Soldier {
     this.game= game;
     this.x = x;
     this.y = y; 
-    this.width = 50;
-    this.height = 50;
+    this.width = 100;
+    this.height = 100;
     this.health = 100;
     this.speed= 30;
     this.direction = 'right';
@@ -34,7 +34,7 @@ class Soldier {
       this.direction = 'up';
     }
     
-  }
+  }p
 
   moveDown() {
     if (this.y + this.height > this.game.canvas.height) {
@@ -51,9 +51,26 @@ class Soldier {
   paint () {
     const context = this.game.context;
     context.save();
-    context.fillStyle = 'midnightblue';
-    context.fillRect(this.x, this.y, this.width, this.height);
+    // context.fillStyle = 'midnightblue';
+    // context.fillRect(this.x, this.y, this.width, this.height);
+    const soldier = new Image();
+    soldier.src = 'images/player/soldier.png';
+    context.drawImage(soldier, this.x,this.y,this.width,this.height) 
     context.restore();
     }
 } 
 
+
+// paint () {
+//   const context = this.game.context;
+//   context.save();
+//   // context.fillStyle ='darkGreen';
+//   // context.fillRect(this.x, this.y, this.width, this.height);
+//   const zombie = new Image();
+//   zombie.src = 'images/zombie/zombie2.png';
+//   context.drawImage(zombie, this.x,this.y,this.width,this.height) 
+//   context.restore();
+//   }
+
+  
+// }

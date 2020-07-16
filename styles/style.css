@@ -13,8 +13,26 @@ body {
   font-family: 'Do Hyeon', sans-serif;
 }
 
+button {
+ color:pink;
+ background-color: yellow;
+ z-index: 1;
+ position: absolute;
+ 
+ 
+}
+
+.info{
+
+  color: magenta;
+
+}
+
 canvas {
-  background-color: #2e2b2b;
+  background-image: url("/images/floor.png");
+  background-size: cover;
   display: flex;
 
 }
+
+
