@@ -12,7 +12,7 @@ class Enemy2 {
  
   
     runLogic(){
-      this.x -= 10;
+      this.x -= 8;
 
   
     }

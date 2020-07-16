@@ -12,8 +12,8 @@ class Infection {
     context.save();
 
     context.font = '32px Do Hyeon';
-    context.fillStyle = 'white';
-    context.fillText('Infection: ' + this.infection, 370, 750);
+    context.fillStyle = 'rgba(255, 255, 255, 0.6)';
+    context.fillText('INFECTION: ' + this.infection, 370, 750);
 
     context.restore();
   }

@@ -74,7 +74,7 @@ class Game {
         let enemy7 = new Enemy3(1000 + this.randomWidth()/1000 + 1,400,this)
         let enemy8 = new Enemy3(1000 + this.randomWidth()/1000 + 1,300,this)
         let enemy9 = new Enemy3(1000 + this.randomWidth()/1000 + 1,200,this)
-        if(this.scoreboard.score >= 500 && this.scoreboard.score % 50 === 0){
+        if(this.scoreboard.score >= 1000 && this.scoreboard.score % 40 === 0){
             this.enemies.push(enemy2);
             this.enemies.push(enemy3);
             this.enemies.push(enemy4);
@@ -189,13 +189,13 @@ class Game {
           this.enemies.splice(this.enemies.indexOf(enemy),1);
         }
         this.soldier.width = 0;
-        this.context.font = '134px Roboto Mono';
-        this.context.fillStyle = 'white';
-        this.context.fillText('GAME OVER', 150, 320);
-        this.context.font = '60px Roboto Mono';
-        this.context.fillText('Score:' + this.scoreboard.score, 370,400);
-        this.context.font = '30px Roboto Mono';
-        this.context.fillText('Press enter to play again.', 290,460);
+        this.context.font = '55px Do Hyeon';
+        this.context.fillStyle = 'rgba(255, 0, 12, 0.8)';
+        this.context.fillText('YOU\'RE DEMON FOOD', 500, 320);
+        this.context.font = '30px Do Hyeon';
+        this.context.fillText('Score:' + this.scoreboard.score, 670,370);
+        this.context.font = '15px Do Hyeon';
+        this.context.fillText('PRESS ENTER TO PLAY AGAIN.', 640,420);
         this.health.health === 0;
         this.running = false;     
     }

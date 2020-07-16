@@ -11,8 +11,8 @@ class Health {
     context.save();
 
     context.font = '32px Do Hyeon';
-    context.fillStyle = 'white';
-    context.fillText('Health: ' + this.health, 20, 750);
+    context.fillStyle = 'rgba(255, 255, 255, 0.6)';
+    context.fillText('HEALTH: ' + this.health, 20, 750);
 
     context.restore();
   }

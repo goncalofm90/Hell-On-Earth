@@ -27,9 +27,9 @@ class Obstacle {
       deadbarricade.src = 'images/zombie/barricadedead.png';
       context.drawImage(deadbarricade, this.x + 1300,this.y,this.width + 30,this.height)
       }
-      context.fillStyle= 'white';
+      context.fillStyle= 'rgba(255, 255, 255, 0.6)';
       context.font = '27px Do Hyeon';
-      context.fillText('Barricade: ' + this.health, 20, 700);
+      context.fillText('BARRICADE: ' + this.health, 20, 700);
       context.restore();
       }
     }

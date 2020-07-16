@@ -11,7 +11,7 @@ class Enemy {
 
 
     runLogic(){
-      this.x -= 2.5;
+      this.x -= 2.85;
 
   
     }
