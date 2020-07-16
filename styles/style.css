@@ -8,12 +8,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://www.wenell.se/wp-content/uploads/2019/09/zombie1024x400-1024x400.jpg");
-  box-sizing: border-box;
+  background-image: url("https://dailydead.com/wp-content/uploads/2017/01/Walking-Dead-Comics-Companion-620.jpg");
   background-size: cover;
   font-family: 'Do Hyeon', sans-serif;
 }
 
 canvas {
   background-color: #2e2b2b;
+  display: flex;
+
 }

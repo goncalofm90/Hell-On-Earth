@@ -12,8 +12,9 @@ class Soldier {
   moveLeft() {
     if(this.x > 0){
       this.x -= this.speed;
-      return;
       this.direction = 'left';
+ 
+      
     }
   }
 
@@ -30,7 +31,6 @@ class Soldier {
     if(this.y > 0){
       this.y -= this.speed;
     }else {
-      return;
       this.direction = 'up';
     }
     

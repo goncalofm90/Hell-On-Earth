@@ -1,10 +1,10 @@
-class Powerup {
+class Enemy2 {
   constructor (x, y, game) {
     this.game = game;
     this.x = x;
     this.y = y;
     this.width = 100;
-    this.height = 20;
+    this.height = 40;
     this.health = 1;
     this.speed = 20;
   }
@@ -25,7 +25,7 @@ class Powerup {
     paint () {
       const context = this.game.context;
       context.save();
-      context.fillStyle ='cyan';
+      context.fillStyle ='red';
       context.fillRect(this.x, this.y, this.width, this.height);
       context.restore();
       }

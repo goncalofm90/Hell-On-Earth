@@ -9,14 +9,9 @@ class Enemy {
     this.speed = 20;
   }
 
-  // removeEnemies(){
-  //   if(this.health === 0){
-  //     const index = this.game.enemies.splice(index,1)
-  //   }
-  // }
-  
+
     runLogic(){
-      this.x --;
+      this.x -= 2;
 
   
     }
