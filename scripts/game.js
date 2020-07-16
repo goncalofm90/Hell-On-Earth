@@ -51,8 +51,6 @@ class Game {
       });
     }
 
-    
-
     randomWidth(){
       return Math.floor(Math.random() * Math.floor(this.canvas.width));
     }
@@ -98,11 +96,6 @@ class Game {
     }
   }
 }
-
- 
-    
-
-  //setInterval(function(){ alert("Hello"); }, 3000);
 
     generateBullets(){
       for (let i = 0; i <  5; i++) {  
@@ -159,7 +152,6 @@ class Game {
       }
     }
 
-
     obstacleCollision(){ 
       if(
         this.obstacle.health === 990 || 
@@ -191,9 +183,6 @@ class Game {
      }
    }
    
-    //new game screen- (press enter to play / is running = true)
-    //power up gives barricade extra health
-   
     gameOver(){
       if(this.soldier.health <= 0 & this.health.health <= 0){
         for(let enemy of this.enemies){
@@ -212,18 +201,11 @@ class Game {
     }
   }
 
-
-
     raiseLevel(){
       if (this.infection.infection % 10 === 0){
         this.level += 1;
       }
     }
-
-      //REMOVE PLAYERS FROM MEMORY AFTER THEY LEAVE CANVAS
-
-
-
 
     removeEnemy(){
       //REMOVE ENEMY FROM MEMORY AND REMOVE HEALTH FROM PLAYER
@@ -254,9 +236,6 @@ class Game {
       }
     }
 
-
-    
- 
     runLogic(){
       for(let enemy of this.enemies){
         enemy.runLogic();
@@ -285,19 +264,12 @@ class Game {
         projectile.paint();
       }
       this.obstacle.paint();
-      this.health.paint();
-      
+      this.health.paint();  
     }
 
     drawStartScreen(){
       const context = this.context;
       context.save();
-      const logo = new Image();
-      logo.src = 'images/zombie/spider.png';
-      context.drawImage(logo, 430,300,500,350); 
-      context.font = '100px Roboto Mono';
-      context.fillStyle = 'white';
-      context.fillText('HELL ON EARTH', 120, 300);
       context.restore();
     }
     loop(){
@@ -308,19 +280,12 @@ class Game {
       this.removeProjectile();
       this.runLogic();
       this.paint();
-      
-
-
-    
     
         setTimeout(() => {
           this.loop();
         }, 1000/60);
 
-      // setTimeout ( () => {
-      //   this.loop();
-      // },1000/60);
-    
+     
   }
  }
 

@@ -11,9 +11,9 @@ class Infection {
 
     context.save();
 
-    context.font = '32px Roboto Mono';
+    context.font = '32px Do Hyeon';
     context.fillStyle = 'white';
-    context.fillText('Infection: ' + this.infection, 370, 650);
+    context.fillText('Infection: ' + this.infection, 370, 750);
 
     context.restore();
   }

@@ -28,8 +28,8 @@ class Obstacle {
       context.drawImage(deadbarricade, this.x + 1300,this.y,this.width + 30,this.height)
       }
       context.fillStyle= 'white';
-      context.font = '27px Roboto Mono';
-      context.fillText('Barricade: ' + this.health, 20, 600);
+      context.font = '27px Do Hyeon';
+      context.fillText('Barricade: ' + this.health, 20, 700);
       context.restore();
       }
     }

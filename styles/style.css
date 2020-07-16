@@ -8,24 +8,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://dailydead.com/wp-content/uploads/2017/01/Walking-Dead-Comics-Companion-620.jpg");
+  /* background-image: url("https://dailydead.com/wp-content/uploads/2017/01/Walking-Dead-Comics-Companion-620.jpg"); */
   background-size: cover;
+  background-color: black;
   font-family: 'Do Hyeon', sans-serif;
+  margin: 0 auto;
+}
+
+div {
+  margin-bottom: 100px;
 }
 
 button {
  color:pink;
- background-color: yellow;
+ background-image: url("/images/LOGOPIXEL-removebg-preview.png");
+ background-color: transparent;
+ border:none ;
  z-index: 1;
+ width: 800px;
+ height: 900px;
+ margin-left: 90px;
+ background-size: cover;
  position: absolute;
- 
- 
+}
+
+button:active {
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .info{
-
-  color: magenta;
-
+  height: 680px;
+  width: 200px;
+  color: #bd1d15;
+  border: 10px solid black;
+  background-color: black;
+  background-image: url("/images/LOGOPIXEL-removebg-preview.png")
+  background-size: cover;
 }
 
 canvas {
