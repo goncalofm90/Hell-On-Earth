@@ -188,7 +188,8 @@ class Game {
         for(let enemy of this.enemies){
           this.enemies.splice(this.enemies.indexOf(enemy),1);
         }
-        this.soldier.width = 0;
+        this.soldier.width = 0; 
+        this.clean();
         this.context.font = '55px Do Hyeon';
         this.context.fillStyle = 'rgba(255, 0, 12, 0.8)';
         this.context.fillText('YOU\'RE DEMON FOOD', 500, 320);
@@ -197,7 +198,8 @@ class Game {
         this.context.font = '15px Do Hyeon';
         this.context.fillText('PRESS ENTER TO PLAY AGAIN.', 640,420);
         this.health.health === 0;
-        this.running = false;     
+        this.running = false;  
+           
     }
   }
 
