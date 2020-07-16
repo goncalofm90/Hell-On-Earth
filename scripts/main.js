@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
     const mainsongUrl = 'audio/MAINSONG.mp3';
     const mainSong = new Audio(mainsongUrl);
     mainSong.play();
+    mainSong.volume = 0.5;
     const guncockUrl = 'audio/GUNCOCK.wav'
     const gunCock = new Audio(guncockUrl);
     gunCock.play();
