@@ -4,23 +4,15 @@ class Powerup {
     this.x = x;
     this.y = y;
     this.width = 100;
-    this.height = 20;
-    this.health = 1;
-    this.speed = 20;
+    this.height = 100;
   }
 
  
   
     runLogic(){
-      this.x -= 5;
-
-  
     }
 
-    randomHeight(){
-      return 
-
-    }
+   
     
     paint () {
       const context = this.game.context;

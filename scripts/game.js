@@ -111,6 +111,8 @@ class Game {
       }
     }
 
+ 
+
 
     enemyCollision(){
       for(let projectile of this.projectiles){
@@ -245,6 +247,7 @@ class Game {
       for(let projectile of this.projectiles){
         projectile.runLogic();
       }
+      
       this.enemyCollision();
       this.obstacleCollision();
       this.playerCollision();

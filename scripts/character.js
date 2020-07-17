@@ -60,17 +60,3 @@ class Soldier {
     }
 } 
 
-
-// paint () {
-//   const context = this.game.context;
-//   context.save();
-//   // context.fillStyle ='darkGreen';
-//   // context.fillRect(this.x, this.y, this.width, this.height);
-//   const zombie = new Image();
-//   zombie.src = 'images/zombie/zombie2.png';
-//   context.drawImage(zombie, this.x,this.y,this.width,this.height) 
-//   context.restore();
-//   }
-
-  
-// }
