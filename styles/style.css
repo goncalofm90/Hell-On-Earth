@@ -48,7 +48,7 @@ button:hover {
   color: #bd1d15;
   border: 10px solid black;
   background-color: black;
-  background-image: url("/images/LOGOPIXEL-removebg-preview.png");
+  /* background-image: url("/images/LOGOPIXEL-removebg-preview.png"); */
   background-size: cover;
 }
 
