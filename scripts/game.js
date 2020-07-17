@@ -74,7 +74,7 @@ class Game {
         let enemy7 = new Enemy3(1000 + this.randomWidth()/1000 + 1,400,this)
         let enemy8 = new Enemy3(1000 + this.randomWidth()/1000 + 1,300,this)
         let enemy9 = new Enemy3(1000 + this.randomWidth()/1000 + 1,200,this)
-        if(this.scoreboard.score >= 1000 && this.scoreboard.score % 40 === 0){
+        if(this.scoreboard.score >= 1400 && this.scoreboard.score % 20 === 10){
             this.enemies.push(enemy2);
             this.enemies.push(enemy3);
             this.enemies.push(enemy4);
