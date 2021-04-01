@@ -1,5 +1,5 @@
 
-# Hell on Earth : :fire:
+# Hell on Earth :fire:
 
 ## My first Ironhack project!
 ## https://hell-on-earth.netlify.app/
